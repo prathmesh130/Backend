@@ -7,7 +7,7 @@ const COMMENT = require('../models/comment.model.js');
 const getUser = require('../middleware/blog.js');
 const TimeAgo = require('javascript-time-ago');
 const en = require('javascript-time-ago/locale/en');
-
+// Logged User Route
 staticRouter.get('/', isUserLogedIn, async (req, res) => {
     const blogs = await BLOG.find();
     const user = req.user;
@@ -17,7 +17,7 @@ staticRouter.get('/', isUserLogedIn, async (req, res) => {
         blogs
     })
 })
-
+// add blog route
 staticRouter.get('/add-blog', isUserLogedIn, (req, res) => {
     const user = req.user;
     res.render("addblogs", {
@@ -25,7 +25,7 @@ staticRouter.get('/add-blog', isUserLogedIn, (req, res) => {
         user
     })
 })
-
+//Profile route
 staticRouter.get('/profile', isUserLogedIn, async (req, res) => {
     const user = req.user;
     const blogs = await BLOG.find({ 'author': user.id })
@@ -36,19 +36,20 @@ staticRouter.get('/profile', isUserLogedIn, async (req, res) => {
 
     })
 })
-
+// login route
 staticRouter.get('/login', (req, res) => {
     res.render("login", {
         title: ''
     })
 })
 
+// singup route
 staticRouter.get('/signup', (req, res) => {
     res.render("signin", {
         title: ''
     })
 })
-
+// get blog from id
 staticRouter.get('/blog/:id', getUser, async (req, res) => {
     TimeAgo.addLocale(en)
     const timeAgo = new TimeAgo('en-US')
