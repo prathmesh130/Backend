@@ -6,8 +6,7 @@ const blogSchema = mongoose.Schema({
     description: { type: String, required: true },
     blogImg: { type: String }
 }, { timestamps: true })
-
-
+// blog 
 const BLOG = mongoose.model('blog', blogSchema)
 
 module.exports = BLOG;
