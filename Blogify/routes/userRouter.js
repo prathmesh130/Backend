@@ -10,4 +10,6 @@ userRouter.post('/signup', createUser)
 
 // user Logout Route
 userRouter.get('/logout', logoutUser)
+
+// export user route
 module.exports = userRouter
