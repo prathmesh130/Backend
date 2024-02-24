@@ -67,5 +67,5 @@ staticRouter.get('/blog/:id', getUser, async (req, res) => {
 
     })
 })
-
+// export static router
 module.exports = staticRouter
