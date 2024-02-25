@@ -22,4 +22,5 @@ blogRouter.post('/', upload.single('blogImage'), createBlog)
 blogRouter.get('/:id', deleteBlog)
 
 blogRouter.post('/comment/:blogid', createComment)
+// export blog route
 module.exports = blogRouter
