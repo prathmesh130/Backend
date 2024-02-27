@@ -1,6 +1,7 @@
 import JwtService from "../services/JwtService";
 import CustomErrorHandler from "../services/customErrorHandler";
 
+// export auth 
 export const auth = async (req, res, next) => {
     let authHeader = req.headers.authorization;
     if (!authHeader) {
