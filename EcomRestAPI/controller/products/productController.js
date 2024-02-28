@@ -5,7 +5,7 @@ import CustomErrorHandler from '../../services/customErrorHandler'
 import { PRODUCT } from '../../models'
 import fs from 'fs'
 
-
+// product Controller
 const productController = {
 
     async addProduct(req, res, next) {
