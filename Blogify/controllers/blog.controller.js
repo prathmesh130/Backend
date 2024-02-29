@@ -27,5 +27,5 @@ const createComment = async (req, res) => {
     res.redirect(`/blog/${req.params.blogid}`)
 }
 
-
+// export blog controller
 module.exports = { createBlog, deleteBlog, createComment }
