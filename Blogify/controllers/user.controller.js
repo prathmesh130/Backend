@@ -1,5 +1,6 @@
 const USER = require('../models/user.model.js');
 const bcrypt = require("bcrypt")
+// create user controller
 const createUser = async (req, res) => {
     if (!req.body.username || !req.body.email || !req.body.password) {
         return res.status(400).send({ message: "Missing fields" })
