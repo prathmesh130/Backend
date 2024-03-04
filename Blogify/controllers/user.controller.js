@@ -15,6 +15,7 @@ const createUser = async (req, res) => {
     res.redirect('/')
 }
 
+// login user controller
 const loginUser = async (req, res) => {
     if (!req.body.username || !req.body.password) {
         return res.status(400).send({ message: "Missing fields" })
