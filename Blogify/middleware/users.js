@@ -43,4 +43,5 @@ const isUserLogedIn = (req, res, next) => {
     }
 }
 
+// export user middleware
 module.exports = isUserLogedIn
