@@ -16,4 +16,5 @@ const getUser = (req, res, next) => {
     next();
 }
 
+// export user middleware
 module.exports = getUser;
