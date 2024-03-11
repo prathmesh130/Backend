@@ -105,4 +105,5 @@ const productController = {
     }
 }
 
+// export product controller
 export default productController
