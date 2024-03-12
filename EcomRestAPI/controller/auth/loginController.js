@@ -51,4 +51,5 @@ const loginController = {
     }
 }
 
+// export login controller
 export default loginController
