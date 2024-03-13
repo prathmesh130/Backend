@@ -84,6 +84,7 @@ const productController = {
         }
     },
 
+// delete product
     async deleteProduct(req, res, next) {
         try {
             const product = await PRODUCT.findOneAndDelete({ _id: req.params.id })
