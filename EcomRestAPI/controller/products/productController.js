@@ -8,6 +8,7 @@ import fs from 'fs'
 // product Controller
 const productController = {
 
+// add product
     async addProduct(req, res, next) {
         console.log(req.body)
         const productSchema = Joi.object({
