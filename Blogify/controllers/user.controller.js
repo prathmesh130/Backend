@@ -34,6 +34,7 @@ const loginUser = async (req, res) => {
     }
 }
 
+// logout user controller
 const logoutUser = async (req, res) => {
     res.clearCookie('token');
     res.redirect('/')
