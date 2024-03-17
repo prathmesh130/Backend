@@ -12,5 +12,5 @@ const logoutController = {
         }
     }
 }
-
+// export logout controller
 export default logoutController
