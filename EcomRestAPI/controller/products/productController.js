@@ -33,6 +33,7 @@ const productController = {
         }
     },
 
+    // get all products
     async getAllProducts(req, res, next) {
         try {
             const Products = await PRODUCT.find();
