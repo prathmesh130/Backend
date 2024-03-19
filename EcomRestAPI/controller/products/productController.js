@@ -56,6 +56,7 @@ const productController = {
         }
     },
 
+    // update product
     async updateProduct(req, res, next) {
         const { name, price, size } = req.body
         const productSchema = Joi.object({
