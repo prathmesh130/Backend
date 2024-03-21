@@ -4,6 +4,8 @@ import { USER, REFRESH } from "../../models";
 import bcrypt from 'bcrypt'
 import JwtService from "../../services/JwtService";
 import { REFERESH_SECRET } from "../../config";
+
+// login controller
 const loginController = {
 
     async login(req, res, next) {
