@@ -4,6 +4,7 @@ import { REFRESH, USER } from "../../models";
 import bcrypt from 'bcrypt'
 import JwtService from "../../services/JwtService";
 import { REFERESH_SECRET } from "../../config";
+// register Controller
 const registerController = {
     async register(req, res, next) {
         const { name, email, password } = req.body;
