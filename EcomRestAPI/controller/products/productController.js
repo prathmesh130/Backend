@@ -44,6 +44,7 @@ const productController = {
 
     },
 
+    // get product
     async getProduct(req, res, next) {
         try {
             const product = await PRODUCT.findById(req.params.id).select(' -updatedAt -__v')
