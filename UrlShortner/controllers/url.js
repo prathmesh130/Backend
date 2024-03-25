@@ -31,4 +31,5 @@ async function handleGetAllURL(req, res) {
     return res.json({ urls })
 }
 
+// export URL Controller
 module.exports = { handleGenerateURL, handleGetAllURL }
