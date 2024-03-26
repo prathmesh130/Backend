@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken')
 const USER = require('../models/user.model.js');
 
+// create user
 const createUser = async (req, res) => {
     if (!req.body.name || !req.body.email || !req.body.password) {
         return res.status(400).send({ message: "Missing fields" })
