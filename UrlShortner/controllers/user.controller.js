@@ -21,7 +21,7 @@ const createUser = async (req, res) => {
     res.cookie('token', token)
     res.redirect('/')
 }
-
+// login user
 const loginUser = async (req, res) => {
     if (!req.body.email || !req.body.password) {
         return res.status(400).send({ message: "Missing fields" })
