@@ -46,5 +46,5 @@ const logoutUser = async (req, res) => {
     res.clearCookie('token');
     res.redirect('/')
 }
-
+// module export 
 module.exports = { createUser, loginUser, logoutUser }
