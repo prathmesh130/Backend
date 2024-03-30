@@ -2,6 +2,7 @@ const nanoid = require('nanoid')
 const URL = require('../models/url.model.js')
 const jwt = require('jsonwebtoken')
 
+// handle generate URL
 async function handleGenerateURL(req, res) {
     const body = req.body;
     if (!body.url) return res.status(400).json({ error: 'url is required' })
