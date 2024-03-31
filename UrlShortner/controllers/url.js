@@ -27,6 +27,7 @@ async function handleGenerateURL(req, res) {
     res.redirect('/')
 }
 
+// handle get all URL
 async function handleGetAllURL(req, res) {
     let urls = await URL.find()
     return res.json({ urls })
