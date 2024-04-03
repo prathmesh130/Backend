@@ -8,4 +8,5 @@ userRouter.post('/signup', createUser)
 userRouter.post('/login', loginUser)
 // logout route
 userRouter.get('/logout', logoutUser)
+// userRouter module export
 module.exports = userRouter
