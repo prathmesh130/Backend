@@ -24,5 +24,5 @@ staticRouter.get('/signup', async (req, res) => {
     return res.render('signup')
 })
 
-
+// export static routes
 module.exports = staticRouter
