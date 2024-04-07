@@ -5,6 +5,7 @@ const urlRouter = express.Router();
 
 urlRouter.get('/', handleGetAllURL)
 
+// Post Route handleGenerateURL 
 urlRouter.post('/', handleGenerateURL)
 
 // export URL Router
