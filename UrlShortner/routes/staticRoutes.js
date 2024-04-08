@@ -16,7 +16,7 @@ staticRouter.get('/', async (req, res) => {
         urls, name, urlLength: urls.length
     })
 })
-
+// login route
 staticRouter.get('/login', async (req, res) => {
     return res.render('login')
 })
