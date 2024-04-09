@@ -3,6 +3,7 @@ const { handleGenerateURL, handleGetAllURL } = require('../controllers/url');
 
 const urlRouter = express.Router();
 
+// handle get all URL 
 urlRouter.get('/', handleGetAllURL)
 
 // Post Route handleGenerateURL 
