@@ -20,6 +20,7 @@ staticRouter.get('/', async (req, res) => {
 staticRouter.get('/login', async (req, res) => {
     return res.render('login')
 })
+// signup route
 staticRouter.get('/signup', async (req, res) => {
     return res.render('signup')
 })
