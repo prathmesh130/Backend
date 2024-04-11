@@ -3,6 +3,7 @@ const URL = require('../models/url.model');
 const jwt = require('jsonwebtoken')
 const staticRouter = express.Router();
 
+// main route
 staticRouter.get('/', async (req, res) => {
     const token = req.cookies.token
     let id, name;
