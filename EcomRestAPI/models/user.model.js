@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const { Schema, model } = mongoose;
-/create user schema
+// create user schema
 const userSchema = new Schema({
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
